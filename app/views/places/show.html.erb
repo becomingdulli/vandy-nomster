@@ -104,3 +104,11 @@
     </blockquote>
   </div>
   <% end %>
+
+
+<div class="clear"></div>
+<%= simple_form_for @photo, url: '#' do |f| %>
+  <%= f.input :picture %>
+  <%= f.input :caption %>
+  <%= f.submit "Add a picture", class: 'btn btn-primary' %>
+<% end %>
