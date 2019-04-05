@@ -11,9 +11,10 @@ Rails.application.configure do
     password: ENV['GMAIL_PASSWORD']
   }
 
-  config.action_mailer.default_url_options = { host: 'localhost:3030' }
-  # more code here..
-end 
+  config.action_mailer.default_url_options = {host: 'localhost:3030'}
+
+
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -74,3 +75,4 @@ end
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 end
+
